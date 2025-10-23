@@ -1,0 +1,183 @@
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color:pink;
+        animation: andar 4s infinite;
+        
+}
+@keyframes andar {
+    0%{
+        transform: translateX(0) scaleX(1);
+    }
+    50%{
+        transform: translateX(200px)scaleX(1);
+    }
+    51%{
+         transform: translateX(200px)scaleX(-1);
+
+    }
+     100% {
+        transform: translateX(0px) scaleX(-1);
+        background-color: rgb(230, 102, 123);
+    }
+}
+
+
+.quadrado2 {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px; 
+        background-color: rgb(253, 0, 0);
+          animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+       animation-name: mudadecor;
+}
+@keyframes mudadecor {
+    0%{
+ background-color: rgb(253, 0, 0);
+    }
+    50%{
+    background-color: rgb(87, 160, 28);
+    }
+    100%{
+  background-color: rgb(52, 65, 202);
+    }
+}
+
+
+
+button {
+  background-color: #0095f9;
+  color: rgb(0, 232, 112);
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+    animation: botom 3s infinite;
+  transition: all 0.3s ease;
+}
+
+@keyframes botom {
+  0% {
+    background-color: #0099ff;
+    color: rgb(0, 232, 112);
+    transform: scale(1);
+  }
+  50% {
+    background-color: #2ecc71;
+    color: rgb(0, 232, 112);
+    transform: scale(1.2);
+  }
+  100% {
+    background-color: #f66300;
+    color:rgb(0, 232, 112);
+    transform: scale(1.4);
+  }
+}
+
+
+
+.texto-piscando {
+  font-size: 32px;
+  font-weight: bold;
+  animation: piscar 2s infinite;
+}
+
+@keyframes piscar {
+  0% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: blue;
+  }
+}
+.ceu {
+  width: 400px;
+  height: 250px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  position: relative;
+}
+
+.sol {
+  position: absolute;
+  bottom: -100px; /* começa fora da caixa */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  animation: nascer 5s ease-in-out infinite alternate;
+}
+
+@keyframes nascer {
+  0% {
+    bottom: -100px; 
+  }
+  100% {
+    bottom: 100px; 
+  }
+}
+.coracao {
+  width: 150px;
+  animation: batendo 1s infinite;
+}
+
+/* Animação do batimento */
+@keyframes batendo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.flutuante {
+  font-size: 36px;
+  font-weight: bold;
+  animation: flutuar 3s ease-in-out infinite alternate;
+}
+
+/* Animação de flutuar */
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
