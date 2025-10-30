@@ -10,7 +10,7 @@ body {
     flex-wrap: wrap;
 }
 .caixa1 {
-  background:linear-gradient(150deg, red, blue);
+  background:linear-gradient( red, blue);
   /* cima p baixo */
 }
 .caixa2 {
@@ -28,5 +28,5 @@ body {
       background: linear-gradient(150deg, pink, white); 
 }
 .caixa6 {
-    background: conic-gradient(from 90deg at center, purple, pink, purple, pink, purple);
+    background: conic-gradient(from 90deg at center, red yellow, green, blue);
 }
