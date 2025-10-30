@@ -1,0 +1,151 @@
+.botao1:hover {
+  background-color: lightblue;
+  color: black;
+  transition: 2s ease-in-out;
+}
+
+/* Botão 2 */
+.botao2:hover {
+  background-color: lightblue;
+  color: black;
+  transition: 3s ease-in-out;
+}
+
+/* Botão 3 */
+.botao3:hover {
+  background-color: lightblue;
+  color: black;
+  transition: 3s ease-in-out;
+}
+
+.botao4:active{
+    background-color: lightblue;
+    transform: scale(0.90);
+}
+
+input:focus {
+    border: 2px solid lightblue);
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin: 15px 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding: 0 15px 15px 15px;
+    color: #555;
+}
+
+/* Efeito hover */
+.card:hover {
+    transform: scale(1.5); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+    background-color: #f9f9f9; 
+}
+img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+img:hover {
+    filter: grayscale(1);
+}
+.botao {
+    background-color: gray;       /* Normal */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;   /* Transição suave */
+}
+
+.botao:hover {
+    background-color: lightblue;  /* Hover */
+}
+
+.botao:active {
+    background-color: darkblue;   /* Pressionado */
+    transform: scale(0.95);       /* Encolhe */
+}
+
+.botao:focus {
+    outline: 2px solid yellow;    /* Borda quando em foco */
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid gray;   /* Borda normal */
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    border-color: blue;       /* Borda destacada quando em foco */
+    box-shadow: 0 0 5px rgba(0,0,255,0.5);
+}
+
+.botao {
+    background-color: gray;    /* Normal */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.botao:hover {
+    background-color: lightblue;   /* Hover */
+}
+
+.botao:active {
+    background-color: darkblue;    /* Pressionado */
+    transform: scale(0.95);        /* Encolhe */
+}
+
+
+
+
+
+
+
+  
+
