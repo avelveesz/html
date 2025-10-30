@@ -28,5 +28,5 @@ body {
       background: linear-gradient(150deg, pink, white); 
 }
 .caixa6 {
-    background: conic-gradient(from 90deg at center, red yellow, green, blue);
+    background: conic-gradient( from 90deg at center,  red, yellow, green, blue);
 }
