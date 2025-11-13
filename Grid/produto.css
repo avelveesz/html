@@ -1,0 +1,180 @@
+/* ======== ESTILO GERAL ======== */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  display: none;
+  padding: 30px 20px;
+}
+
+section.ativo {
+  display: block;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* ======== TABULEIRO ======== */
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(4, 120px);
+  gap: 12px;
+  justify-content: center;
+}
+
+.quadrado {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+/* cores */
+.vermelho { background-color: #e74c3c; }
+.azul { background-color: #3498db; }
+.verde { background-color: #2ecc71; }
+.amarelo { background-color: #f1c40f; }
+.roxo { background-color: #8e44ad; }
+.rosa { background-color: #ff6b9a; }
+.laranja { background-color: #e67e22; }
+.ciano { background-color: #1abc9c; }
+.marrom { background-color: #a0522d; }
+.cinza { background-color: #95a5a6; }
+.preto { background-color: #2d2d2d; }
+.branco { background-color: #ffffff; border: 1px solid #ccc; }
+
+/* ======== GALERIA ======== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 18px;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.25s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* ======== PRODUTOS ======== */
+/* grid de 3 colunas para produtos */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* usa fração para ficar mais responsivo */
+  gap: 24px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/* caixa do produto */
+.produto {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  height: 360px; /* altura uniforme */
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+/* efeito hover */
+.produto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+}
+
+.produto img {
+  width: 70%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* informação do produto alinhada e legível */
+.info {
+  width: 100%;
+  text-align: center;
+  margin-top: auto; /* empurra a info para baixo mantendo imagem no topo */
+}
+
+.nome {
+  font-size: 18px;
+  margin: 8px 0 6px;
+  color: #222;
+}
+
+.preco {
+  font-weight: 700;
+  color: #1a73e8;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* responsivo: em telas pequenas empilha 1 coluna, em médias 2 colunas */
+@media (max-width: 900px) {
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tabuleiro {
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(4, 90px);
+  }
+}
+
+@media (max-width: 520px) {
+  .produtos {
+    grid-template-columns: 1fr;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+  .tabuleiro {
+    grid-template-columns: repeat(3, 72px);
+    grid-template-rows: repeat(4, 72px);
+    gap: 8px;
+  }
+}
+
